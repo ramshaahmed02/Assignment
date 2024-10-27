@@ -1,0 +1,71 @@
+//page.tsx file//
+import Link from 'next/link';
+
+const NavBar = () => {
+    return (
+        <nav>
+            <Link href="/Contact">Contact</Link> | 
+            <Link href="/Services">Services</Link> | 
+            <Link href="/About">About Us</Link>
+        </nav>
+    );
+};
+
+export default NavBar;
+
+//About us page//
+
+import React from 'react';
+
+const About = () => {
+    return (
+        <div style={{ padding: '2rem' }}>
+            <h1>About Us</h1>
+            <p>We are available at your service <br /> We provide you best appartment <br /> alongwith the best location </p>
+        </div>
+    );
+};
+
+export default About;
+
+//Services page//
+
+
+import React from 'react';
+
+const Services = () => {
+    return (
+        <div style={{ padding: '2rem' }}>
+            <h1>Our Services</h1>
+            <ul>
+                <li>Flat Booking</li>
+                <li>Pre -Booking</li>
+                <li>Post-Booking</li>
+                <li>Fun Packages</li>
+            </ul>
+            <p>We offer a wide range of apartments to make your living peaceful and stress-free!</p>
+        </div>
+    );
+};
+
+export default Services;
+
+//Contact us page//
+
+import React from 'react';
+
+const Contact = () => {
+    return (
+        <div style={{ padding: '2rem' }}>
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us. We’re here to help!</p>
+            <ul>
+                <li>Email: Builders@gmail.com</li>
+                <li>Phone: (313) 478-7890</li>
+                <li>Address: 123 Happy Street, Karachi City</li>
+            </ul>
+        </div>
+    );
+};
+
+export default Contact;
